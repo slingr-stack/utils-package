@@ -29,7 +29,7 @@ The following utilities are available in this package.
 ### Commons utilities
 This is a set of utilities that allows to check data types.
 
-**Check if a variable is empty**
+#### Check if a variable is empty
 ```js
 let company = record.field('company').val();
 if (pkg.utils.commons.isEmpty(company)) {
@@ -37,7 +37,7 @@ if (pkg.utils.commons.isEmpty(company)) {
 }
 ```
 
-**Check if a variable is not empty**
+#### Check if a variable is not empty**
 ```js
 let company = record.field('company').val();
 if (pkg.utils.commons.isNotEmpty(company)) {
@@ -45,7 +45,7 @@ if (pkg.utils.commons.isNotEmpty(company)) {
 }
 ```
 
-**Check if a variable is of type object**
+#### Check if a variable is of type object
 ```js
 let company = record.field('company').val();
 if (pkg.utils.commons.isObject(company)) {
@@ -53,7 +53,7 @@ if (pkg.utils.commons.isObject(company)) {
 }
 ```
 
-**Check if a variable is of type function**
+#### Check if a variable is of type function
 ```js
 let company = record.field('company').equals;
 if (pkg.utils.commons.isFunction(company)) {
@@ -61,7 +61,7 @@ if (pkg.utils.commons.isFunction(company)) {
 }
 ```
 
-**Check if a variable is of type number**
+#### Check if a variable is of type number**
 ```js
 let score = record.field('score').val();
 if (pkg.utils.commons.isNumber(score)) {
@@ -69,7 +69,7 @@ if (pkg.utils.commons.isNumber(score)) {
 }
 ```
 
-**Check if a variable is of type string**
+#### Check if a variable is of type string**
 ```js
 let companyLabel = record.field('company').label();
 if (pkg.utils.commons.isString(companyLabel)) {
@@ -77,7 +77,7 @@ if (pkg.utils.commons.isString(companyLabel)) {
 }
 ```
 
-**Check if a variable is of type boolean**
+#### Check if a variable is of type boolean**
 ```js
 let isActive = record.field('active').val();
 if (pkg.utils.commons.isBoolean(isActive)) {
@@ -88,7 +88,7 @@ if (pkg.utils.commons.isBoolean(isActive)) {
 ### Random data utilities
 This library helps to generate random data like strings, texts, numbers, etc. It is useful to generate sample data for testing purposes.
 
-**Generate random strings**
+#### Generate random strings
 ```js
 // generate a random string. By default it will return a string with random length of 10 characters.
 pkg.utils.random.string(); 
@@ -98,7 +98,7 @@ pkg.utils.random.string(5);
 pkg.utils.random.uuid();
 ```
 
-**Generate random numbers**
+#### Generate random numbers
 ```js
 // generate a random integer in the range 0 to 100
 pkg.utils.random.integer(); 
@@ -110,7 +110,7 @@ pkg.utils.random.decimal();
 pkg.utils.random.decimal(-4.5, 5.5); 
 ```
 
-**Generate random boolean**
+#### Generate random boolean
 ```js
 // generate a random boolean value
 pkg.utils.random.boolean(); 
