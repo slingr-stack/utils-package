@@ -88,6 +88,34 @@ if (pkg.utils.commons.isBoolean(isActive)) {
 ### Random data utilities
 This library helps to generate random data like strings, texts, numbers, etc. It is useful to generate sample data for testing purposes.
 
+**Generate random strings**
+```js
+// generate a random string. By default it will return a string with random length of 10 characters.
+pkg.utils.random.string(); 
+// specify a length and the string will be exactly that length.
+pkg.utils.random.string(5); 
+// generate a random UUID
+pkg.utils.random.uuid();
+```
+
+**Generate random numbers**
+```js
+// generate a random integer in the range 0 to 100
+pkg.utils.random.integer(); 
+// can optionally provide min and max
+pkg.utils.random.integer(-20, 20); 
+// generate a random integer in the range 0.0 to 100.0
+pkg.utils.random.decimal();
+// can optionally provide min and max
+pkg.utils.random.decimal(-4.5, 5.5); 
+```
+
+**Generate random boolean**
+```js
+// generate a random boolean value
+pkg.utils.random.boolean(); 
+```
+
 
 
 
