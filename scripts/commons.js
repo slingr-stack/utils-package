@@ -25,16 +25,6 @@ exports.isNumber = function (numberValue) {
     return !isNaN(parseFloat(numberValue)) && isFinite(numberValue);
 };
 
-exports.isInteger = function (n, options) {
-    if (options && options.allowString && typeof n === 'string') {
-        var oldN = n;
-        n = parseInt(n);
-        return oldN === '' + n && Number(n) === n && n % 1 === 0;
-    } else {
-        return Number(n) === n && n % 1 === 0;
-    }
-};
-
 exports.isBoolean = function (booleanValue) {
     return booleanValue == true || booleanValue == false;
 };

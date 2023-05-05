@@ -1,0 +1,18 @@
+{
+  "label": "Utils",
+  "name": "utils",
+  "description": "Set of common utilities to help with the scripting in the Slingr low code platform.",
+  "dependencies": [],
+  "configuration":[],
+  "events": [],
+  "metadata": [
+    {
+      "type": "script",
+      "path": "/scripts/commons.js"
+    },
+    {
+      "type": "script",
+      "path": "/scripts/random.js"
+    }
+  ]
+}

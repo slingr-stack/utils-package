@@ -1,3 +1,4 @@
+
 exports.integer = function (min, max) {
     min = min || 0;
     max = max || 100;
