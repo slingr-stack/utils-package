@@ -34,7 +34,7 @@ exports.isBoolean = function (booleanValue) {
 };
 
 exports.isObject = function (value) {
-    return !isEmpty(value) && typeof (value) === 'object';
+    return !exports.isEmpty(value) && typeof (value) === 'object';
 };
 
 exports.isString = function (value) {
