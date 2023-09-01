@@ -1,12 +1,27 @@
-# Utils package
+<table>
+    <thead>
+    <tr>
+        <th>Title</th>
+        <th>Last Updated</th>
+        <th>Summary</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Utils package</td>
+        <td>September 1, 2023</td>
+        <td>Detailed description of the Utils Package.</td>
+    </tr>
+    </tbody>
+</table>
 
-## Overview
+# Overview
 
-Set of common utilities to help with the scripting in the Slingr low code platform.
+Set of common utilities to help with the scripting in the Slingr low-code platform.
 
 ## Quick start
 
-Once you have installed the package you can start using user helpers like this:
+Once you have installed the package, you can start using user helpers like this:
 
 ```js
 // check data types
@@ -22,14 +37,14 @@ log(pkg.utils.random.decimal(1, 10)); // prints 6.8181
 log(pkg.utils.random.boolean()); // prints false
 ```
 
-## Javascript API
+# Javascript API
 
 The following utilities are available in this package.
 
-### Commons utilities
+## Commons utilities
 This is a set of utilities that allows to check data types.
 
-#### Check if a variable is empty
+### Check if a variable is empty
 ```js
 let company = record.field('company').val();
 if (pkg.utils.commons.isEmpty(company)) {
@@ -37,7 +52,7 @@ if (pkg.utils.commons.isEmpty(company)) {
 }
 ```
 
-#### Check if a variable is not empty**
+### Check if a variable is not empty**
 ```js
 let company = record.field('company').val();
 if (pkg.utils.commons.isNotEmpty(company)) {
@@ -45,7 +60,7 @@ if (pkg.utils.commons.isNotEmpty(company)) {
 }
 ```
 
-#### Check if a variable is of type object
+### Check if a variable is of type object
 ```js
 let company = record.field('company').val();
 if (pkg.utils.commons.isObject(company)) {
@@ -53,7 +68,7 @@ if (pkg.utils.commons.isObject(company)) {
 }
 ```
 
-#### Check if a variable is of type function
+### Check if a variable is of type function
 ```js
 let company = record.field('company').equals;
 if (pkg.utils.commons.isFunction(company)) {
@@ -61,7 +76,7 @@ if (pkg.utils.commons.isFunction(company)) {
 }
 ```
 
-#### Check if a variable is of type number**
+### Check if a variable is of type number**
 ```js
 let score = record.field('score').val();
 if (pkg.utils.commons.isNumber(score)) {
@@ -69,7 +84,7 @@ if (pkg.utils.commons.isNumber(score)) {
 }
 ```
 
-#### Check if a variable is of type string**
+### Check if a variable is of type string**
 ```js
 let companyLabel = record.field('company').label();
 if (pkg.utils.commons.isString(companyLabel)) {
@@ -77,7 +92,7 @@ if (pkg.utils.commons.isString(companyLabel)) {
 }
 ```
 
-#### Check if a variable is of type boolean**
+### Check if a variable is of type boolean**
 ```js
 let isActive = record.field('active').val();
 if (pkg.utils.commons.isBoolean(isActive)) {
@@ -85,10 +100,10 @@ if (pkg.utils.commons.isBoolean(isActive)) {
 }
 ```
 
-### Random data utilities
+## Random data utilities
 This library helps to generate random data like strings, texts, numbers, etc. It is useful to generate sample data for testing purposes.
 
-#### Generate random strings
+### Generate random strings
 ```js
 // generate a random string. By default it will return a string with random length of 10 characters.
 pkg.utils.random.string(); 
@@ -98,7 +113,7 @@ pkg.utils.random.string(5);
 pkg.utils.random.uuid();
 ```
 
-#### Generate random numbers
+### Generate random numbers
 ```js
 // generate a random integer in the range 0 to 100
 pkg.utils.random.integer(); 
@@ -110,13 +125,17 @@ pkg.utils.random.decimal();
 pkg.utils.random.decimal(-4.5, 5.5); 
 ```
 
-#### Generate random boolean
+### Generate random boolean
 ```js
 // generate a random boolean value
 pkg.utils.random.boolean(); 
 ```
+# About SLINGR
 
+SLINGR is a low-code rapid application development platform that accelerates development, with robust architecture for integrations and executing custom workflows and automation.
 
+[More info about SLINGR](https://slingr.io)
 
+# License
 
-
+This package is licensed under the Apache License 2.0. See the `LICENSE` file for more details.

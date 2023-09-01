@@ -1,3 +1,7 @@
+/****************************************************
+ Helpers
+ ****************************************************/
+
 exports.isEmpty = function (obj) {
     if (obj === null || typeof obj === 'undefined') {
         return true;
@@ -18,7 +22,7 @@ exports.isEmpty = function (obj) {
 };
 
 exports.isNotEmpty = function (obj) {
-    return !isEmpty(obj);
+    return !exports.isEmpty(obj);
 };
 
 exports.isNumber = function (numberValue) {
@@ -39,5 +43,5 @@ exports.isString = function (value) {
 
 let isFunction = function (object) {
     let getType = {};
-    return !isEmpty(object) && getType.toString.call(object) === '[object Function]';
+    return !exports.isEmpty(object) && getType.toString.call(object) === '[object Function]';
 };

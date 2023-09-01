@@ -1,5 +1,5 @@
 {
-  "label": "Utils",
+  "label": "Utils Package",
   "name": "utils",
   "description": "Set of common utilities to help with the scripting in the Slingr low code platform.",
   "dependencies": [],
