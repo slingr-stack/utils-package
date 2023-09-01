@@ -130,6 +130,7 @@ pkg.utils.random.decimal(-4.5, 5.5);
 // generate a random boolean value
 pkg.utils.random.boolean(); 
 ```
+
 # About SLINGR
 
 SLINGR is a low-code rapid application development platform that accelerates development, with robust architecture for integrations and executing custom workflows and automation.
