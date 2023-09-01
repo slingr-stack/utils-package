@@ -41,7 +41,7 @@ exports.isString = function (value) {
     return (typeof value === 'string');
 };
 
-let isFunction = function (object) {
+exports.isFunction = function (object) {
     let getType = {};
     return !exports.isEmpty(object) && getType.toString.call(object) === '[object Function]';
 };
