@@ -8,10 +8,12 @@
   "metadata": [
     {
       "type": "script",
+      "namespace": "commons",
       "path": "/scripts/commons.js"
     },
     {
       "type": "script",
+      "namespace": "random",
       "path": "/scripts/random.js"
     }
   ]
