@@ -4,7 +4,13 @@
   "description": "Set of common utilities to help with the scripting in the Slingr low code platform.",
   "dependencies": [],
   "configuration":[],
-  "events": [],
+  "events": [
+    {
+      "label": "UI Service: Webhook",
+      "name": "uiWebhook",
+      "description": "Happens when the Slingr platform receives a webhook from the UI service."
+    }
+  ],
   "metadata": [
     {
       "type": "script",
@@ -15,6 +21,16 @@
       "type": "script",
       "namespace": "random",
       "path": "/scripts/random.js"
+    },
+    {
+      "type": "uiService",
+      "namespace": "uiManagement",
+      "path": "/uiServices/uiManagement"
+    },
+    {
+      "type": "script",
+      "namespace": "ui",
+      "path": "/scripts/ui.js"
     }
   ]
 }
