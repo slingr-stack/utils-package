@@ -22,7 +22,7 @@ exports.string = function (length) {
     let result = '';
     const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
     const charactersLength = characters.length;
-    for (let i = 0; i < length; i++) {
+    for (var i = 0; i < length; i++) {
         result += characters.charAt(Math.floor(Math.random() * charactersLength));
     }
     return result;
@@ -36,10 +36,10 @@ exports.boolean = function () {
 };
 
 exports.uuid = function () {
-    var d = new Date().getTime();//Timestamp
-    var d2 = ((typeof performance !== 'undefined') && performance.now && (performance.now() * 1000)) || 0;//Time in microseconds since page-load or 0 if unsupported
+    let d = new Date().getTime();//Timestamp
+    let d2 = ((typeof performance !== 'undefined') && performance.now && (performance.now() * 1000)) || 0;//Time in microseconds since page-load or 0 if unsupported
     return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
-        var r = Math.random() * 16;//random number between 0 and 16
+        let r = Math.random() * 16;//random number between 0 and 16
         if (d > 0) {//Use timestamp until depleted
             r = (d + r) % 16 | 0;
             d = Math.floor(d / 16);
@@ -53,7 +53,7 @@ exports.uuid = function () {
 
 exports.hexadecimal = function (length) {
     length = length || 10;
-    return  exports.integer(0, 16777215).toString(16).padStart(length, '0');
+    return exports.integer(0, 16777215).toString(16).padStart(length, '0');
 };
 
 exports.color = function () {
