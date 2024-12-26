@@ -3,21 +3,23 @@
  ****************************************************/
 
 exports.isEmpty = function (obj) {
+    // Check for null or undefined
     if (obj === null || typeof obj === 'undefined') {
         return true;
     }
+    // Check for empty string
     if (typeof obj === 'string' && (!obj || !obj.trim())) {
         return true;
     }
-    if (Array.isArray(obj) && obj.length == 0) {
+    // Check for empty array
+    if (Array.isArray(obj) && obj.length === 0) {
         return true;
     }
+    // Check for empty object
     if (typeof obj === 'object' && !Array.isArray(obj)) {
-        for (var name in obj) {
-            return false;
-        }
-        return true;
+        return Object.keys(obj).length === 0;
     }
+    // If none of the above, it's not empty
     return false;
 };
 
@@ -30,7 +32,7 @@ exports.isNumber = function (numberValue) {
 };
 
 exports.isBoolean = function (booleanValue) {
-    return booleanValue == true || booleanValue == false;
+    return booleanValue === true || booleanValue === false;
 };
 
 exports.isObject = function (value) {

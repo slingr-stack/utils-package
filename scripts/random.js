@@ -14,9 +14,7 @@ exports.decimal = function (min, max) {
     // Generate a random decimal between 0 and 1
     const randomDecimal = Math.random();
     // Scale the decimal to the range (max - min) and shift it by min
-    const scaledDecimal = randomDecimal * (max - min) + min;
-    // Return the scaled decimal
-    return scaledDecimal;
+    return randomDecimal * (max - min) + min;
 };
 
 exports.string = function (length) {
@@ -24,7 +22,7 @@ exports.string = function (length) {
     let result = '';
     const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
     const charactersLength = characters.length;
-    for (var i = 0; i < length; i++) {
+    for (let i = 0; i < length; i++) {
         result += characters.charAt(Math.floor(Math.random() * charactersLength));
     }
     return result;
@@ -34,9 +32,7 @@ exports.boolean = function () {
     // Generate a random number between 0 and 1
     const randomNum = Math.random();
     // Convert the number to a boolean value (true if > 0.5, false otherwise)
-    const randomBool = randomNum > 0.5;
-    // Return the boolean value
-    return randomBool;
+    return randomNum > 0.5;
 };
 
 exports.uuid = function () {
@@ -53,4 +49,15 @@ exports.uuid = function () {
         }
         return (c === 'x' ? r : (r & 0x3 | 0x8)).toString(16);
     });
+};
+
+exports.color = function () {
+    const randomNumber = exports.integer(0, 16777215);
+    return '#' + randomNumber.toString(16).padStart(6, '0');
+};
+
+exports.date = function(startDate, endDate) {
+    const start = startDate.getTime();
+    const end = endDate.getTime();
+    return new Date(Math.random() * (end - start) + start);
 };

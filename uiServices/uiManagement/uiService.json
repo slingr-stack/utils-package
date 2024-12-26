@@ -15,14 +15,16 @@
       "label": "Open in new tab",
       "name": "openInNewTab",
       "callbacks": [
-        "success","fail"
+        "success",
+        "fail"
       ]
     },
     {
       "label": "Open in current tab",
       "name": "openInCurrentTab",
       "callbacks": [
-        "success","fail"
+        "success",
+        "fail"
       ]
     }
   ],

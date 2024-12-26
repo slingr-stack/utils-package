@@ -20,7 +20,7 @@ exports.openInNewTab = function (url) {
             }
         }
     });
-}
+};
 
 exports.openInCurrentTab = function (url) {
     var userId = sys.context.getCurrentUserRecord().id();
@@ -40,4 +40,4 @@ exports.openInCurrentTab = function (url) {
             }
         }
     });
-}
+};

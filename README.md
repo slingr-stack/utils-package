@@ -1,19 +1,3 @@
-<table>
-    <thead>
-    <tr>
-        <th>Title</th>
-        <th>Last Updated</th>
-        <th>Summary</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <td>Utils package</td>
-        <td>September 1, 2023</td>
-        <td>Detailed description of the Utils Package.</td>
-    </tr>
-    </tbody>
-</table>
 
 # Overview
 
@@ -129,6 +113,18 @@ pkg.utils.random.decimal(-4.5, 5.5);
 ```js
 // generate a random boolean value
 pkg.utils.random.boolean(); 
+```
+
+### Generate random color
+```js
+// generate a random boolean value
+pkg.utils.random.color(); 
+```
+
+### Generate random date
+```js
+// generate a random boolean value
+pkg.utils.random.date(); 
 ```
 
 # About SLINGR
