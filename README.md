@@ -115,6 +115,12 @@ pkg.utils.random.decimal(-4.5, 5.5);
 pkg.utils.random.boolean(); 
 ```
 
+### Generate random date
+```js
+// generate a random boolean value
+pkg.utils.random.hexadecimal(20); 
+```
+
 ### Generate random color
 ```js
 // generate a random boolean value

@@ -51,9 +51,13 @@ exports.uuid = function () {
     });
 };
 
+exports.hexadecimal = function (length) {
+    length = length || 10;
+    return  exports.integer(0, 16777215).toString(16).padStart(length, '0');
+};
+
 exports.color = function () {
-    const randomNumber = exports.integer(0, 16777215);
-    return '#' + randomNumber.toString(16).padStart(6, '0');
+    return '#' + exports.hexadecimal(6);
 };
 
 exports.date = function(startDate, endDate) {
