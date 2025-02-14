@@ -1,36 +1,39 @@
 {
-  "label": "Utils Package",
-  "name": "utils",
-  "description": "Set of common utilities to help with the scripting in the Slingr low code platform.",
-  "dependencies": [],
-  "configuration":[],
-  "events": [
-    {
-      "label": "UI Service: Webhook",
-      "name": "uiWebhook",
-      "description": "Happens when the Slingr platform receives a webhook from the UI service."
-    }
-  ],
-  "metadata": [
-    {
-      "type": "script",
-      "namespace": "commons",
-      "path": "/scripts/commons.js"
-    },
-    {
-      "type": "script",
-      "namespace": "random",
-      "path": "/scripts/random.js"
-    },
-    {
-      "type": "uiService",
-      "namespace": "uiManagement",
-      "path": "/uiServices/uiManagement"
-    },
-    {
-      "type": "script",
-      "namespace": "ui",
-      "path": "/scripts/ui.js"
-    }
-  ]
+	"label": "Utils",
+	"name": "utils",
+	"description": "Set of common utilities to help with the scripting in the Slingr low code platform.",
+	"dependencies": [],
+	"configuration": [
+		{
+			"label": "This package does not require configuration.",
+			"name": "appSettings",
+			"type": "info",
+			"typeOptions": {
+				"alertType": "info"
+			}
+		}
+	],
+	"events": [],
+	"metadata": [
+		{
+			"type": "script",
+			"namespace": "commons",
+			"path": "/scripts/commons.js"
+		},
+		{
+			"type": "script",
+			"namespace": "random",
+			"path": "/scripts/random.js"
+		},
+		{
+			"type": "uiService",
+			"namespace": "uiManagement",
+			"path": "/uiServices/uiManagement"
+		},
+		{
+			"type": "script",
+			"namespace": "ui",
+			"path": "/scripts/ui.js"
+		}
+	]
 }
