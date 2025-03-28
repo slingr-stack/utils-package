@@ -1,6 +1,8 @@
 
 # Overview
 
+Repo: [https://github.com/slingr-stack/utils-package](https://github.com/slingr-stack/utils-package)
+
 Set of common utilities to help with the scripting in the Slingr low-code platform.
 
 ## Quick start
